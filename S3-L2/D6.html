@@ -141,7 +141,12 @@
     */
 
       const addParagrafo = document.querySelector("div p");
-      const addParagraph = function () {};
+      const addParagraph = function () {
+        const newP = document.createElement("li");
+        newP.innerText = "L'Inter arriva terza";
+        addParagrafo.appendChild(newP);
+      };
+      addParagraph();
 
       /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
